@@ -18,7 +18,8 @@
         userName: 'it-persona@i.ua',
         password: '123123123'
       }
-      window.open(`wsConfablo://?user=${user.userName}&pass=${user.password}`)
+      const token = btoa(`${user.userName}:${user.password}`)
+      window.open(`wsConfablo://?token=${token}`)
     })
   </script>
 </body>
