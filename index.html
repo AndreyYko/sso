@@ -19,12 +19,10 @@
         password: '123123123'
       }
       const ios = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream || !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform)
-      console.log(ios)
       if (ios) {
         const token = btoa(`${user.username}:${user.password}`)
         window.open(`https://confablo.page.link/?link=http://worldstores.stageserver.org/?token=${token}/&isi=1009116743&ibi=com.worldstores.ekreative&ius=com.worldstores.ekreative`)
       }
-      return
     })
   </script>
 </body>
