@@ -17,6 +17,7 @@ body {
   height: 100%;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 button {
@@ -28,4 +29,10 @@ button {
   -moz-border-radius: 20px;
   border-radius: 20px;
   font-size: 1.5em;
+}
+
+a {
+  margin-top: 25px;
+  color: #ffffff;
+  font-size: 2em;
 }
