@@ -10,6 +10,7 @@
 </head>
 <body>
   <button>Open in app</button>
+  <a href="https://confablo.page.link">Open</a>
 
   <script type="text/javascript">
     const button = document.querySelector('button')
@@ -18,7 +19,7 @@
         username: 'it-persona@i.ua',
         password: '123123123'
       }
-      window.location.href = `https://confablo.page.link`
+      window.open(`wsConfablo://?user=${user.username}&password=${user.password}`)
     })
   </script>
 </body>
